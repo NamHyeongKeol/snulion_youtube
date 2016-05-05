@@ -1,0 +1,9 @@
+<%= form_tag player_path, method: :get, class: 'white_bg', style: 'padding: 7vw 0.5vw;' do %>
+  <h3 class="center">YouTube URL</h3>
+  <div class="input-field container white_bg">
+    <%= url_field_tag :url, nil,  placeholder: '주소를 입력해 주세요', required: true %>
+  </div>
+  <div class="center" style="margin-top: 4vw;">
+    <%= submit_tag :입력, class: 'btn-large red' %>
+  </div>
+<% end %>
